@@ -55,7 +55,7 @@ export default function Cart() {
                   </div>
                 </div>
                 <div className="mt-2 sm:mt-0 text-right">
-                  <p className="font-bold">Total: ₹{Math.round(item.price *80* item.quantity)}</p>
+                  <p className="font-bold">Total: ₹{Math.round(item.price *85* item.quantity)}</p>
                   <button
                     onClick={() => removeFromCart(item.id)}
                     className="mt-2 text-red-500 hover:underline"
@@ -67,9 +67,9 @@ export default function Cart() {
             ))}
 
             <div className="text-right pt-4 border-t mt-4">
-              <p className="font-semibold">Subtotal: ₹{80*total}</p>
-              <p className="text-green-600">Discount (10%): -₹{Math.round(80*discount)}</p>
-              <p className="text-xl font-bold">Final Price: ₹{Math.round(80*finalPrice)}</p>
+              <p className="font-semibold">Subtotal: ₹{85*total}</p>
+              <p className="text-green-600">Discount (10%): -₹{Math.round(85*discount)}</p>
+              <p className="text-xl font-bold">Final Price: ₹{Math.round(85*finalPrice)}</p>
             </div>
           </div>
         )}
